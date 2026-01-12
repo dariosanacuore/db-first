@@ -1,1 +1,19 @@
 Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario
+
+id - UNSIGNED INT PRIMARY KEY(UNIQUE,NOT NULL) - AUTOINCREMENT
+marca - VARCHAR(255) - NOT NULL
+modello - VARCHAR(255) - NOT NULL
+targa - VARCHAR(255) - UNIQUE - NULL
+descrizione - TEXT - NULL
+potenza_kW DECIMAL(7,3) NOT NULL
+cambio TINYINT - NULL
+classe ambientale VARCHAR(255) - NULL
+alimentazione VARCHAR(255) - NULL
+carrozzeria VARCHAR(255) - NULL
+anno_immatricolazione YEAR NOT NULL
+prezzo DECIMAL (7,2) NOT NULL
+versione VARCHAR(255) - NULL
+numero_porte UNSIGNED SMALLINT - NOT NULL
+numero_km DEFAULT 0
+abs TINYINT - NULL - DEFAULT 0
+alzacristallielettrici TINYINT - NULL - DEFAULT 0
